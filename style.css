@@ -1,0 +1,178 @@
+/* Reinitialization of the margins of all elements*/
+* {
+  margin:0; 
+}
+
+:disabled {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#error_message {
+  background-color: white;
+  color: red;
+  border-radius: 5px;
+}
+
+/* Style for all the page */
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100vh;
+  font-size: 1.3rem;
+  color: #ffeee6;
+}
+
+/* Style for the header */
+header {
+  color: #f68e5f;
+  margin-bottom: 75px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  color: #f76c5e;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+/* Style for the main. Where all most of the action will take place */
+main {
+  background-color:#f68e5f;
+  padding: 2%;
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.zone-options {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin: 20px 0;
+}
+
+.proposition-zone {
+  background-color: white;
+  color: #f76c5e;
+  border-radius: 15px;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.typing-zone {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], button, input {
+  background-color: white;
+  border-color: white;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+button, input[type="submit"] {
+  color: #f68e5f;
+  font-weight: 600;
+}
+
+.typing-zone input[type="text"] {
+  flex: 0.9;
+}
+
+.btn_validate {
+  flex: 0.1;
+}
+
+.score {
+  margin-bottom: 20px;
+}
+
+.btn_share {
+  margin-left: 2%;
+}
+
+.btn_restart {
+  margin-right: 2%;
+}
+
+/* Style for the footer. */
+footer {
+  background-color: #f68e5f;
+  padding: 25px 0;
+  margin-top: 75px;
+  font-size: 1rem;
+}
+
+/* style for the popup window*/
+.popup_background {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+.title {
+  font-size: 1.7rem;
+}
+
+.popup {
+  background-color: #f76c5e;
+  color:#ffeee6;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 300px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 90%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .proposition-zone {
+    font-size: 2.2rem;
+  }
+}

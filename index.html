@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<htmL lang="fr">
+    <head>
+        <meta charset="'utf-8">
+        <title>AzerType</title>
+        <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/config.js" defer></script>
+        <script src="scripts/popup.js" defer></script>
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>AzerType</h1>
+            <h2>L'application pour écrire plus vite !</h2>
+            <p>Azertype est une en ligne pour apprendre a taper plus vite au clavier :)</p>
+        </header>
+
+        <main>
+            <p>Choisissez votre option et tapez la proposition qui s'affiche
+                dans le champ en-dessous.
+            </p>
+
+            <form>
+                <div class="zone-options">
+                    <div>
+                        <input type="radio" name="option" value="mots" id="mots" checked> 
+                        <label for="mots">Mots</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="phrases" id="phrases"> 
+                        <label for="phrases">Phrases</label>
+                    </div>
+                </div>
+
+                <div class="proposition-zone">
+                    ---
+                </div>
+
+                <div class="typing-zone">
+                    <input type="text" name="text_zone" id="text_zone">
+                    <button type="button" class="btn_validate">Valider</button>
+                </div>
+
+                <div  class="score">
+                    Votre score : <span></span>
+                </div>
+                
+                <button type="button" class="btn_restart">Reprendre</button>
+                <button type="button" class="btn_share">Partager</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>@Copyright : Openclassrooms. 2023 (-_-)</p>
+        </footer>
+
+        <!-- popup windows. It will show up after click on button partager -->
+        <div class="popup_background">
+            <div class="popup">
+                <div class="title">Partagez votre score</div>
+            
+                <form novalidate>
+                    <div>
+                        <label for="name">Votre nom: </label> <br>
+                        <input type="text" name="name" id="name" placeholder="Votre nom">
+                    </div>
+                    <div>
+                        <label for="mail">Avec qui voulez-vous partager votre score ? </label> <br>
+                        <input type="email" name="mail" id="mail" placeholder="xyz@mail.com">
+                    </div>
+                    
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </body>
+</htmL>
